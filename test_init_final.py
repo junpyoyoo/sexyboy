@@ -901,12 +901,12 @@ class taskCog(commands.Cog):
 						continue
 					continue
 				t.cancel()
-		# await ctx.send( '< 보탐봇 명치 맞고 숨 고르기 중! 잠시만요! >', tts=False)
+		# await ctx.send( '< 고마해라 많이 무따 아이가!>', tts=False)
 		try:
 			file = discord.File("./명치.JPG")
 			await ctx.send(file = file)
 		except:
-			await ctx.send( '< 보탐봇 명치 맞고 숨 고르기 중! 잠시만요! >', tts=False)
+			await ctx.send( '< 고마해라 많이 무따 아이가! >', tts=False)
 		print("명치!")
 		await dbSave()
 		await data_list_Save("kill_list.ini", "-----척살명단-----", kill_Data)
@@ -1189,10 +1189,10 @@ class taskCog(commands.Cog):
 									bossMungFlag[i] = False
 									bossMungCnt[i] = 0
 									if bossData[i][2] == '0':
-										await self.bot.get_channel(channel).send(f'```자동 미입력 횟수 {basicSetting[17]}회 초과! [{bossData[i][0]}] 삭제!```', tts=False)
+										await self.bot.get_channel(channel).send(f'```자동 미입력 횟수 {basicSetting[7]}회 초과! [{bossData[i][0]}] 삭제!```', tts=False)
 										print ('자동미입력 횟수초과 <' + bossData[i][0] + ' 삭제완료>')
 									else:
-										await self.bot.get_channel(channel).send(f'```자동 멍처리 횟수 {basicSetting[17]}회 초과! [{bossData[i][0]}] 삭제!```', tts=False)
+										await self.bot.get_channel(channel).send(f'```자동 멍처리 횟수 {basicSetting[7}회 초과! [{bossData[i][0]}] 삭제!```', tts=False)
 										print ('자동멍처리 횟수초과 <' + bossData[i][0] + ' 삭제완료>')
 									#await dbSave()
 									
